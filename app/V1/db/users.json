@@ -2,6 +2,7 @@
     {
         "id": 1,
         "email": "admin@cosasdedevs.com",
+        "username": "admin",
         "password": "$2y$10$5YtB7.4Q0cD8DWhAgXVC8eOdsVniwyg6PEgO0qrU7qmzomqrI08.6",
         "is_admin": true,
         "is_active": true
@@ -9,6 +10,7 @@
     {
         "id": 2,
         "email": "user2@cosasdedevs.com",
+        "username": "user2",
         "password": "$2y$10$5YtB7.4Q0cD8DWhAgXVC8eOdsVniwyg6PEgO0qrU7qmzomqrI08.6",
         "is_admin": false,
         "is_active": true
@@ -16,6 +18,7 @@
     {
         "id": 3,
         "email": "user3@cosasdedevs.com",
+        "username": "user3",
         "password": "$2y$10$5YtB7.4Q0cD8DWhAgXVC8eOdsVniwyg6PEgO0qrU7qmzomqrI08.6",
         "is_admin": false,
         "is_active": true

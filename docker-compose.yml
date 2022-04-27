@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    build: .
+    command: php -S 0.0.0.0:8010 -t public/
+    volumes:
+    - .:/data
+    ports:
+      - "8010:8010"

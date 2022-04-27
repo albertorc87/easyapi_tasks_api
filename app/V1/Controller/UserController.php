@@ -33,7 +33,11 @@ class UserController
 
         $user_id = $ddbb->createUser($_POST['username'], $_POST['email'], $_POST['password']);
 
-        $user = $ddbb->getUser($user_id);
+        $user = [
+            'id' => $user_id,
+            'username' => $_POST['username'],
+            'email' => $_POST['email'],
+        ];
 
         return view('json', $user);
 

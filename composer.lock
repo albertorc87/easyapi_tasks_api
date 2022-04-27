@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "albertorc87/easyapi",
-            "version": "v0.1.3",
+            "version": "v0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/albertorc87/EasyAPI.git",
-                "reference": "2ff5c1284018c4ff68f56e90926058df34362346"
+                "reference": "594da9ac7780077e5ef382bf27e302e2b8173562"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/albertorc87/EasyAPI/zipball/2ff5c1284018c4ff68f56e90926058df34362346",
-                "reference": "2ff5c1284018c4ff68f56e90926058df34362346",
+                "url": "https://api.github.com/repos/albertorc87/EasyAPI/zipball/594da9ac7780077e5ef382bf27e302e2b8173562",
+                "reference": "594da9ac7780077e5ef382bf27e302e2b8173562",
                 "shasum": ""
             },
             "require": {
@@ -46,9 +46,9 @@
             "description": "EasyAPI es un micro framework pensado en el desarrollo de APIs con arquitectura REST y que no depende de ninguna librería.",
             "support": {
                 "issues": "https://github.com/albertorc87/EasyAPI/issues",
-                "source": "https://github.com/albertorc87/EasyAPI/tree/v0.1.3"
+                "source": "https://github.com/albertorc87/EasyAPI/tree/v0.1.4"
             },
-            "time": "2022-04-24T06:18:48+00:00"
+            "time": "2022-04-26T20:25:39+00:00"
         },
         {
             "name": "firebase/php-jwt",
