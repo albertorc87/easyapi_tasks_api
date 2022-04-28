@@ -2,7 +2,7 @@
 
     $id_ini = 1;
 
-    $task_for_users = 20;
+    $task_for_users = 30;
 
     $users = [1, 2, 3];
 
@@ -17,7 +17,7 @@
                 'created_at' => date('Y-m-d H:i:s'),
             ];
 
-            if($num_task > 10) {
+            if($num_task > 15) {
                 $task['updated_at'] = null;
                 $task['is_done'] = false;
             }
