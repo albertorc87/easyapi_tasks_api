@@ -117,7 +117,15 @@ class DBTask
         if (isset($_SERVER['HTTPS'])) {
             $http = 'https://';
         }
-        return $http . $_SERVER['HTTP_HOST'] . $_SERVER['PATH_INFO'];
+
+        $path = $_SERVER['REQUEST_URI'];
+        foreach(['?', '#'] as $char) {
+            if(strpos($path, $char) !== false) {
+                $path = strstr($path, $char, true);
+            }
+        }
+
+        return $http . $_SERVER['HTTP_HOST'] . $path;
     }
 
     public function updateTask(array $params, int $user_id, int $task_id): void
