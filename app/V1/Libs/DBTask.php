@@ -60,12 +60,14 @@ class DBTask
         $tasks = $this->getDataBase();
 
         $user_tasks = [
-            'total' => 0,
-            'count' => 0,
             'page' => $page,
             'limit' => $limit,
-            'is_done' => $is_done,
+            'filters' => [
+                'is_done' => $is_done,
+            ],
             'pagination' => [
+                'total' => 0,
+                'tasks_per_page' => 0,
                 'previous' => '',
                 'next' => ''
             ],
@@ -86,7 +88,7 @@ class DBTask
             }
         }
 
-        $user_tasks['total'] = count($aux_tasks);
+        $user_tasks['pagination']['total'] = count($aux_tasks);
 
         if($page === 1) {
             $user_tasks['tasks'] = array_slice($aux_tasks, 0, $limit);
@@ -106,7 +108,7 @@ class DBTask
 
         }
 
-        $user_tasks['count'] = count($user_tasks['tasks']);
+        $user_tasks['pagination']['tasks_per_page'] = count($user_tasks['tasks']);
 
         return $user_tasks;
     }
