@@ -47,6 +47,10 @@ class DBTask
             throw new HttpException('Invalid query param "is_done", valid values "true" or "false"');
         }
 
+        if($limit > 25) {
+            throw new HttpException('The limit of tasks per request is 25');
+        }
+
         $aux_is_done = "";
         if($is_done === 'true') {
             $aux_is_done = "&is_done=$is_done";
