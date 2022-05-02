@@ -31,7 +31,7 @@ class AuthController
         }
 
         if(!password_verify($password, $user['password'])) {
-            throw new HttpException('Invalid password', 400);
+            throw new HttpException('Invalid user or password', 400);
         }
 
         $time = time();

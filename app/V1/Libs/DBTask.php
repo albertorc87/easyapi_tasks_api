@@ -8,7 +8,13 @@ class DBTask
 {
     public function createTask($title, $user_id): int
     {
-        return 91;
+        if(strlen($title) < 5) {
+            throw new HttpException('The title must have at least 5 characters');
+        }
+        if(strlen($title) > 255) {
+            throw new HttpException('The maximum size allowed for the title is 255 characters');
+        }
+        return 151;
     }
 
     public function getTaskByUserId(int $task_id, int $user_id): array
