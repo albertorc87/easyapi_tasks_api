@@ -65,7 +65,7 @@ class TaskController
             'is_done' => false
         ];
 
-        return view('json', ['task' => $task, 'msg' => 'Task has been created succesfully'], 201);
+        return view('json', ['task' => $task, 'msg' => 'Task has been created successfully'], 201);
     }
 
     public function update(int $id, Request $request)
@@ -104,7 +104,7 @@ class TaskController
         $task['title'] = $post['title'] ?? $task['title'];
         $task['is_done'] = $post['is_done'] ?? $task['is_done'];
 
-        return view('json', ['task' => $task, 'msg' => 'Task has been updated succesfully']);
+        return view('json', ['task' => $task, 'msg' => 'Task has been updated successfully']);
     }
 
     public function delete(int $id, Request $request)
