@@ -40,7 +40,7 @@ class AuthController
                 'id' => $user['id']
             ],
             'iat' => $time,
-            'exp' => $time + (60 * 60 * 24 * 30)
+            'exp' => $time + (60 * 15)
         ];
 
         $jwt = JWT::encode($payload, $_ENV['JWT_KEY'], 'HS256');
