@@ -8,6 +8,7 @@ use EasyAPI\Request;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use Firebase\JWT\ExpiredException;
+use Firebase\JWT\SignatureInvalidException;
 use Exception;
 use App\V1\Libs\DBUser;
 
@@ -28,6 +29,9 @@ class AdminAuth extends Middleware
             $request->setData('user_id', $decoded->data->id);
         }
         catch(ExpiredException $e) {
+            throw new HttpException('Your token has expired, please login again', 401);
+        }
+        catch(SignatureInvalidException $e) {
             throw new HttpException('Your token has expired, please login again', 401);
         }
         catch(Exception $e) {
