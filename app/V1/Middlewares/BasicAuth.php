@@ -8,6 +8,8 @@ use EasyAPI\Request;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 use Firebase\JWT\ExpiredException;
+use Firebase\JWT\SignatureInvalidException;
+
 use Exception;
 
 use EasyAPI\Exceptions\HttpException;
@@ -28,6 +30,9 @@ class BasicAuth extends Middleware
             return $request;
         }
         catch(ExpiredException $e) {
+            throw new HttpException('Your token has expired, please login again', 401);
+        }
+        catch(SignatureInvalidException $e) {
             throw new HttpException('Your token has expired, please login again', 401);
         }
         catch(Exception $e) {
