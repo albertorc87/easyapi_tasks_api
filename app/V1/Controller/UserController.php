@@ -39,7 +39,7 @@ class UserController
             'email' => $_POST['email'],
         ];
 
-        return view('json', $user);
+        return view('json', $user, 201);
 
     }
 

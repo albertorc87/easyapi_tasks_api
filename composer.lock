@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "albertorc87/easyapi",
-            "version": "v0.1.4",
+            "version": "v0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/albertorc87/EasyAPI.git",
-                "reference": "594da9ac7780077e5ef382bf27e302e2b8173562"
+                "reference": "c7cb210165ab0fb2d5197b9d7f61333ba3d0e115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/albertorc87/EasyAPI/zipball/594da9ac7780077e5ef382bf27e302e2b8173562",
-                "reference": "594da9ac7780077e5ef382bf27e302e2b8173562",
+                "url": "https://api.github.com/repos/albertorc87/EasyAPI/zipball/c7cb210165ab0fb2d5197b9d7f61333ba3d0e115",
+                "reference": "c7cb210165ab0fb2d5197b9d7f61333ba3d0e115",
                 "shasum": ""
             },
             "require": {
@@ -46,29 +46,34 @@
             "description": "EasyAPI es un micro framework pensado en el desarrollo de APIs con arquitectura REST y que no depende de ninguna librería.",
             "support": {
                 "issues": "https://github.com/albertorc87/EasyAPI/issues",
-                "source": "https://github.com/albertorc87/EasyAPI/tree/v0.1.4"
+                "source": "https://github.com/albertorc87/EasyAPI/tree/v0.1.5"
             },
-            "time": "2022-04-26T20:25:39+00:00"
+            "time": "2022-05-16T16:42:56+00:00"
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v6.1.2",
+            "version": "v6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "c297139da7c6873dbd67cbd1093f09ec0bbd0c50"
+                "reference": "d28e6df83830252650da4623c78aaaf98fb385f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/c297139da7c6873dbd67cbd1093f09ec0bbd0c50",
-                "reference": "c297139da7c6873dbd67cbd1093f09ec0bbd0c50",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/d28e6df83830252650da4623c78aaaf98fb385f3",
+                "reference": "d28e6df83830252650da4623c78aaaf98fb385f3",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1||^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.5||9.5"
+                "guzzlehttp/guzzle": "^6.5||^7.4",
+                "phpspec/prophecy-phpunit": "^1.1",
+                "phpunit/phpunit": "^7.5||^9.5",
+                "psr/cache": "^1.0||^2.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0"
             },
             "suggest": {
                 "paragonie/sodium_compat": "Support EdDSA (Ed25519) signatures when libsodium is not present"
@@ -103,9 +108,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v6.1.2"
+                "source": "https://github.com/firebase/php-jwt/tree/v6.2.0"
             },
-            "time": "2022-04-21T14:37:18+00:00"
+            "time": "2022-05-13T20:54:50+00:00"
         },
         {
             "name": "graham-campbell/result-type",
